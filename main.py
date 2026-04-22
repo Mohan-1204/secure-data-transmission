@@ -10,10 +10,10 @@ import secrets
 import yagmail
 app = Flask(__name__)
 app.secret_key = 'stego_secret_key'
-# SENDER_EMAIL = "testsam360@gmail.com"
-# SENDER_PASSWORD = "rddwmbynfcbgpywf"
-SENDER_EMAIL = os.environ.get("EMAIL_USER")
-SENDER_PASSWORD = os.environ.get("EMAIL_PASS")
+SENDER_EMAIL = "testsam360@gmail.com"
+SENDER_PASSWORD = "rddwmbynfcbgpywf"
+# SENDER_EMAIL = os.environ.get("EMAIL_USER")
+# SENDER_PASSWORD = os.environ.get("EMAIL_PASS")
 
 os.makedirs('static/uploads/originals', exist_ok=True)
 os.makedirs('static/uploads/encrypted', exist_ok=True)
